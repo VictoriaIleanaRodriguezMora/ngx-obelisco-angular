@@ -28,6 +28,13 @@ jobs:
       - name: Build Angular library
         run: npm run build ngx-obelisco-v17
 
+      - name: Verificar archivos después de build
+        run: |
+          ls -la projects/ngx-obelisco-v17
+          mkdir -p dist/ngx-obelisco-v17
+          cp -r projects/ngx-obelisco-v17/* dist/ngx-obelisco-v17/
+          ls -la dist/ngx-obelisco-v17
+
       - name: Pack the library
         run: |
           cd dist/ngx-obelisco-v17
