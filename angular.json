@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-obelisco-v17": {
+    "angular-obelisco-v17": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,9 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngx-obelisco-v17",
+            "outputPath": "dist/angular-obelisco-v17",
             "index": "src/index.html",
-            "baseHref": "/ngx-obelisco-v17/",
+            "baseHref": "/angular-obelisco-v17/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -34,7 +34,7 @@
               "src/assets"
             ],
             "styles": [
-              "projects/ngx-obelisco-v17/scss/obelisco.scss",
+              "projects/angular-obelisco-v17/scss/obelisco.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngx-obelisco-v17-demo:build:production"
+              "buildTarget": "angular-obelisco-v17-demo:build:production"
             },
             "development": {
-              "buildTarget": "ngx-obelisco-v17-demo:build:development"
+              "buildTarget": "angular-obelisco-v17-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ngx-obelisco-v17-demo:build"
+            "buildTarget": "angular-obelisco-v17-demo:build"
           }
         },
         "test": {
