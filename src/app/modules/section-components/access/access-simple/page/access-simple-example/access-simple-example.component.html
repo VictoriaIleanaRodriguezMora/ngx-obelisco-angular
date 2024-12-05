@@ -1,0 +1,125 @@
+<section class="section-example">
+  <app-viewer title="Solo título">
+    <div component class="access-items-3">
+      <o-access title="Acceso" route="/home"></o-access>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
+      <code highlight-js>{{ exampleAccessTitleHtml }}</code>
+    </div>
+  </app-viewer>
+
+  <app-viewer title="Con descripción">
+    <div component class="access-items-3">
+      <o-access title="Acceso" description="Descripción (Opcional)" route="/home"></o-access>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
+      <code highlight-js>{{ exampleAccessDescriptionHtml }}</code>
+    </div>
+  </app-viewer>
+
+  <app-viewer title="Con icono">
+    <div component class="access-items-3">
+      <o-access title="Acceso" icon="bx bxs-info-circle" route="/home" description="Descripción (Opcional)"></o-access>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
+      <code highlight-js>{{ exampleAccessIconHtml }}</code>
+    </div>
+  </app-viewer>
+
+  <app-viewer title="Tamaños">
+    <div component class="access-items-3">
+      <div class="col">
+        <o-access title="Acceso" icon="bx bxs-info-circle" route="/home" description="Descripción (Opcional)"></o-access>
+      </div>
+      <div class="col">
+        <o-access
+          title="Acceso"
+          icon="bx bxs-info-circle"
+          route="/home"
+          description="Descripción (Opcional)"
+          size="sm"
+        ></o-access>
+      </div>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
+      <code highlight-js>{{ exampleAccessSizesHtml }}</code>
+    </div>
+  </app-viewer>
+  <p class="h4">Disposición</p>
+  <app-viewer title="Cuatro columnas en desktop, dos columnas en tablet y una columna en mobile">
+    <div component class="access-items-4">
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
+      <code highlight-js>{{ layoutFour }}</code>
+    </div>
+  </app-viewer>
+
+  <app-viewer title="Cuatro columnas en desktop y una columna en tablet y mobile">
+    <div component class="access-items-4 row-cols-md-1">
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
+      <code highlight-js>{{ layoutFourTablet }}</code>
+    </div>
+  </app-viewer>
+
+  <app-viewer title="Tres columnas en desktop, dos columnas en tablet y una columna en mobile">
+    <div component class="access-items-3">
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
+      <code highlight-js>{{ layoutThree }}</code>
+    </div>
+  </app-viewer>
+
+  <app-viewer title="Tres columnas en desktop y una columna en tablet y mobile">
+    <div component class="access-items-3 row-cols-md-1">
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+      <o-access title="Acceso" size="sm" route="/home"></o-access>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
+      <code highlight-js>{{ layoutThreeTablet }}</code>
+    </div>
+  </app-viewer>
+
+  <app-viewer title="Una columna en aside">
+    <div component class="row">
+      <div class="col-12 col-xl-4">
+        <div component class="access-items-1">
+          <o-access title="Acceso" size="sm" route="/home"></o-access>
+          <o-access title="Acceso" size="sm" route="/home"></o-access>
+          <o-access title="Acceso" size="sm" route="/home"></o-access>
+          <o-access title="Acceso" size="sm" route="/home"></o-access>
+        </div>
+      </div>
+      <div class="col-12 col-xl-8">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquid tenetur impedit a non iusto quibusdam fugiat maxime corporis debitis laudantium omnis eos quos ipsam dolor, consequatur, ipsa excepturi voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquid tenetur impedit a non iusto quibusdam fugiat maxime corporis debitis laudantium omnis eos quos ipsam dolor, consequatur, ipsa excepturi voluptatibus.</p>
+      </div>
+    </div>
+    <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
+      <code highlight-js>{{ layoutOne }}</code>
+    </div>
+  </app-viewer>
+</section>
